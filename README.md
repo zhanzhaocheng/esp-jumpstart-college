@@ -42,14 +42,25 @@ git push origin <name>
 ```
 EXAMPLE:
 git init
+
 cd .git
+
 git clone  https://github.com/zhanzhaocheng/esp-jumpstart-college.git
+
 cd esp-jumpstart-college
+
 git checkout -b newbranch
+
 //change the target project
+
 git add README.md
+
 git commit -m 'newbranch'
+
 git checkout master
+
 git merge newbranch
+
 git remote add origin  https://github.com/zhanzhaocheng/esp-jumpstart-college.git
+
 git push -u origin master
