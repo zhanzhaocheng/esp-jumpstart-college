@@ -4,10 +4,15 @@
 
 1. 端口配置
     红灯： GPIO21
+    
     绿灯： GPIO22
+    
     蓝灯： GPIO23
+    
     ADC1： ADC_CHANNEL_6 GPIO34
+    
     TCP/IP PORT：6666
+    
 
 2. LED 状态显示
     - 等待配网 红色闪烁
