@@ -65,9 +65,10 @@ void led_state_task(void *pvParameter)
         Provisioning :blink blue
         Provision done : solid green
         Provision fail : solid red
+        TX_ING: blink rad and green
     */
    static bool red_last=0;
-  // static bool green_last=0;
+   static bool green_last=0;
    static bool blue_last=0;
     while(1) {
         switch(led_state_current){
@@ -94,6 +95,14 @@ void led_state_task(void *pvParameter)
              gpio_set_level(JUMPSTART_BOARD_OUTPUT_RED,1);
              gpio_set_level(JUMPSTART_BOARD_OUTPUT_GREEN,0);
              gpio_set_level(JUMPSTART_BOARD_OUTPUT_BLUE,0);
+            break;
+            case TX_ING:
+             green_last=!green_last;
+             gpio_set_level(JUMPSTART_BOARD_OUTPUT_RED,!green_last);
+             gpio_set_level(JUMPSTART_BOARD_OUTPUT_GREEN,green_last);
+             gpio_set_level(JUMPSTART_BOARD_OUTPUT_BLUE,0); 
+            break;
+            default:
             break;
         }
         vTaskDelay(500 / portTICK_PERIOD_MS);

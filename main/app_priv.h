@@ -13,8 +13,8 @@ enum eLed_state{
     PRIV_WAIT,
     PRIV_ING,
     PRIV_DONE,
-    PRIV_FAIL
-
+    PRIV_FAIL,
+    TX_ING
 };
 void app_driver_init(void);
 void set_led_state(enum eLed_state state);
