@@ -26,5 +26,8 @@
 
 ### 4. Android上位机源码
 'https://github.com/qljz1993/EEGViewer/tree/Viewer4Android'
+
+### 5. Demo show
+![Demo](https://github.com/zhanzhaocheng/esp-jumpstart-college/blob/libo_espJumpStart/Android%20demo.gif)
     
 
