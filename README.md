@@ -25,6 +25,6 @@
 - 长按Boot 重置设备
 
 ### 4. Android上位机源码
-'https://github.com/qljz1993/EEGViewer.git'
+'https://github.com/qljz1993/EEGViewer/tree/Viewer4Android'
     
 
