@@ -29,7 +29,6 @@ sdkconfig
 sdkconfig.old
 build/
 serial_log/
-bin/
 
 # vscode
 *.DS_Store
