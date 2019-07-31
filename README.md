@@ -1,6 +1,6 @@
 # esp-jumpstart-college
 
-## 课后作业2
+## 课后作业2_
 
 1. LED 状态显示
     - 等待配网 红色闪烁
